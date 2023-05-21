@@ -64,6 +64,11 @@ app.use(
 );
 
 app.use("/auth", authRoute);
+app.get("/", (req,res)=>{
+  res.send({message:'yup'})
+});
+
+
 
 
 
